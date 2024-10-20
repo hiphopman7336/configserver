@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: "configserver"
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: "classpath:/config"
+          # macOS search-locations: "file:///Users//eazybytes//Documents//config"
+          # search-locations: "file:///C://Users//Kritsana//Documents//config"
+
+server:
+  port: 8071
