@@ -11,11 +11,14 @@ spring:
         # macOS search-locations: "file:///Users//eazybytes//Documents//config"
         # winOS search-locations: "file:///C://Users//Kritsana//Documents//config"
         git:
-          uri: "https://github.com/hiphopman7336/eazybytes-config"
+          uri: "https://github.com/hiphopman7336/eazybytes-config.git"
           default-label: main
           timeout: 5
           clone-on-start: true
           force-pull: true
+
+encrypt:
+  key: "45D81EC1EF61DF9AD8D3E5BB397F9"
 
 server:
   port: 8071
