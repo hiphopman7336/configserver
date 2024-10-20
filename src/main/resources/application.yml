@@ -2,16 +2,16 @@ spring:
   application:
     name: "configserver"
   profiles:
-    # active: native
-    active: git
+    active: git # native
   cloud:
     config:
       server:
         # native:
         # search-locations: "classpath:/config"
-        # search-locations: "file:///Users//eazybytes//Documents//config"
+        # macOS search-locations: "file:///Users//eazybytes//Documents//config"
+        # winOS search-locations: "file:///C://Users//Kritsana//Documents//config"
         git:
-          uri: "https://github.com/hiphopman7336/configserver.git"
+          uri: "https://github.com/hiphopman7336/eazybytes-config"
           default-label: main
           timeout: 5
           clone-on-start: true
